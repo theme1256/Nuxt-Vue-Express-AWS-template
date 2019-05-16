@@ -1,6 +1,6 @@
-# butiksaabningstider-frontend
+# Nuxt-Vue-Express on AWS-Lambda
 
-> SSR Frontend til butiksaabningstider-api
+> SSR Frontend
 
 ## Build Setup
 
