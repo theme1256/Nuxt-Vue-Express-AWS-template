@@ -1,0 +1,35 @@
+service: vue-nuxt-express-aws-template
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: ${self:custom.secrets.NODE_ENV}
+  region: eu-west-1
+  environment:
+    NODE_ENV: ${self:custom.secrets.NODE_ENV}
+    API: ${self:custom.secrets.API}
+
+functions:
+  nuxt:
+    handler: index.nuxt
+    memorySize: 256
+    events:
+      - http: ANY {proxy+}
+      - http: ANY /
+
+plugins:
+  - serverless-apigw-binary
+  - serverless-domain-manager
+  - serverless-offline
+ 
+custom:
+  secrets: ${file(secrets.json)}
+  apigwBinary:
+    types:
+      - '*/*'
+  customDomain:
+    domainName: ${self:custom.secrets.DOMAIN}
+    basePath: ''
+    stage: ${self:custom.secrets.NODE_ENV}
+    createRoute53Record: true
+    certificateName: ${self:custom.secrets.DOMAIN}

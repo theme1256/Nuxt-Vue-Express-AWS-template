@@ -1,0 +1,50 @@
+{
+  "name": "butiksaabningstider-frontend",
+  "version": "1.0.0",
+  "description": "SSR Frontend til butiksaabningstider-api",
+  "main": "index.js",
+  "engines": {
+    "node": "8.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "deploy": "npm run build && sls deploy",
+    "start-server": "npm run build && node app.js",
+    "start-sls": "npm run build && sls offline start"
+  },
+  "keywords": [],
+  "author": "Folkmann",
+  "license": "MIT",
+  "dependencies": {
+    "aws-serverless-express": "^3.3.6",
+    "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "nuxt": "^2.6.1",
+    "serverless-apigw-binary": "^0.4.4",
+    "serverless-http": "^1.9.1",
+    "vuetify": "^1.5.5",
+    "vuetify-loader": "^1.2.1",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "serverless-domain-manager": "^3.2.1",
+    "serverless-offline": "^4.9.4",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.7.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-html": "^4.0.6",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}
