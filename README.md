@@ -1,6 +1,6 @@
 # Nuxt-Vue-Express on AWS-Lambda
 
-> SSR Frontend
+> SSR Frontend on Serverless
 
 ## Build Setup
 
@@ -11,12 +11,8 @@ $ npm install
 # serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+# build for production and upload to AWS-Lambda (update config in serverless.yml first!)
+$ npm run deploy
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).

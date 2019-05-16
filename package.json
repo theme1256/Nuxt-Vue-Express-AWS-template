@@ -1,7 +1,7 @@
 {
-  "name": "butiksaabningstider-frontend",
+  "name": "vue-nuxt-express-aws-template",
   "version": "1.0.0",
-  "description": "SSR Frontend til butiksaabningstider-api",
+  "description": "SSR Frontend on Serverless",
   "main": "index.js",
   "engines": {
     "node": "8.10"
