@@ -1,8 +1,10 @@
+org: theme1256
+app: vue-nuxt-express-aws-template-app
 service: vue-nuxt-express-aws-template
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs12.x
   stage: ${self:custom.secrets.NODE_ENV}
   region: eu-west-1
   environment:
