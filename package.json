@@ -24,7 +24,7 @@
     "axios": "^0.18.1",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
-    "nuxt": "^2.11.0",
+    "nuxt": "^2.15.8",
     "serverless-apigw-binary": "^0.4.4",
     "serverless-http": "^1.9.1",
     "vuetify": "^1.5.5",
